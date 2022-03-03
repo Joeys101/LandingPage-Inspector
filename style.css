@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    font-weight: 800;
+    padding: 1%;
+}
+.logo {
+    max-width: 3.5rem;
+    margin-right: 15%;
+}
+nav {
+    width: 40%;
+}
+li {
+    display:block;
+    padding: 0 2% 0;
+    text-decoration:none;
+    float:left;
+    margin-top: 3%;
+
+}
+.foto {
+    width: 100%;
+
+}
+.box {
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    border-radius: 5%;
+    background-color: rgba(0, 0, 0, 0.585);
+    width: 50%;
+    height: 40;
+    padding: 5%;
+}
+.box h2, h4 {
+    
+    font-size: 2rem;
+}
+.safe{
+    color: white;
+    font-weight: 100;
+}
+.jls {
+    color: white;
+    font-weight: 900;
+}
+h4 {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+.request {
+    margin-left: 13%;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+    width: 75%;
+    background-color: rgb(154, 255, 2);
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+li:hover {
+    cursor: pointer;
+    text-align: center;
+    transition: 0.2s;
+    border-radius: 10%;
+    margin-top: 3%;
+    width: auto;
+    height: 2rem;
+    padding-top: 0.7%;
+    background-color: rgb(154, 255, 2);
+}
+.conocenos img {
+    float: left;
+    width: 40%;
+    margin: 2.9% 3% 2.9%;
+    border-radius: 3%;
+
+}
+.conocenos {
+    padding: 2% 15% 5%;
+}
+.quien {
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 1.5rem;
+}
+.intro {
+    font-size: 0.8rem;
+    margin-bottom: 2%;
+}
+.inspeccion {
+    font-size: 0.8rem;
+}
+.caja {
+    display: flex;
+    justify-content: center;
+    margin: 6% 0 20.2%;
+}
+.columna {
+    width: 11.5rem;
+    height: 4.5rem;
+    margin: 1%; 
+    padding: 2%;
+    border-radius: 5%;
+    background-color: orange;
+    color: transparent;
+}
+.titulo {
+    font-size: 1.2rem;
+    margin-bottom: 7%;
+    text-align: center;
+}
+.contenido {
+    font-size: 0.8rem;
+}
+.columna img {
+    width: 2rem;
+    float: none;
+    margin-top: -0.1rem;
+    margin-left: 3.5rem;
+}
+.columna:hover{
+    cursor:default;
+    height: auto;
+    width: 13rem;
+    margin: 1%; 
+    padding: 3%;
+    border-radius: 5%;
+    background-color: orange;
+    color: black;
+    transition: 0.7s;
+}
