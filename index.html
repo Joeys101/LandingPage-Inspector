@@ -6,92 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JLS</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./app.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
     
 </head>
 <body>
-
+    
     <!-- Inicio -->
-
-    <header>
-        <img src="./pngwing.com.png" alt="logo" class="logo">
+    
         <nav>
-        <ul>
-            <a href="#"><li>Home</li></a>
-            <a href="#conocenos"><li>Conocenos</li></a>
-            <li>Servicios</li>
-            <li>Precios</li>
-            <li>Contacto</li>
-        </ul>
+            <img src="./pngwing.com.png" alt="logo" class="logo">
+            <ul>
+                <a href="#"><li>Home</li></a>
+                <a href="#conocenos"><li>Conocenos</li></a>
+                <li>Servicios</li>
+                <li>Precios</li>
+                <li>Contacto</li>
+            </ul>
         </nav>
-    </header>
-    <main>
-    <img src="./Foto Inspector.jpg" alt="Personas" class="foto">
-    <div class="box">
-        <h2 class="safe">Certifica tu obra con</h2>
-        <h2 class="jls">JLS Inspecciones</h2>
-        <h4>Tu ayuda para identificar el problema</h4>
-        <div class="request">
-           <a href="#"><h2>Pide una inspeccion</h2></a>
+        <img src="./Foto Inspector.jpg" alt="Personas" class="foto" id="foto">
+        <div class="box">
+            <h2 class="safe">Certifica tu obra con</h2>
+            <h2 class="jls">JLS Inspecciones</h2>
+            <h4>Tu ayuda para identificar el problema</h4>
+        <div class="request" id="request" onclick="mostrar()">
+            <a href="#"><h2>Pide una inspeccion</h2></a>
         </div>
     </div>
-    </main>
 
-    <!-- Presentacion -->
+<!-- Planilla -->
 
-    <div class="conocenos" id="conocenos">
+<form method="POST" action="procesar.php" class="planilla" id="planilla">
+    <button onclick="ocultar()">X</button>
+    <h1>Formulario de contacto</h1>
+    <div class="campo">
+      <label for="nombre">Nombre completo/Empresa *</label> 
+      <input type="text" id="nombre" name="nombre" required placeholder="Nombre/Empresa">
+    </div>
+    <div class="campo">
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required placeholder="Email">
+    </div>
+    <div class="campo">
+      <label for="mensaje">Mensaje *</label>
+      <textarea id="mensaje" name="mensaje" required placeholder="Que necesitas?"></textarea>
+    </div>
+    <input type="submit" value="Enviar" class="enviar">
+  </form>
+
+<!-- Presentacion -->
+
+<div class="conocenos" id="conocenos">
+    <div class="aboutUs">
         <img src="./Escalera.jpg" alt="Inspector en escaleras">
-        <h2 class="quien">Quienes somos?</h2>
-        <h2 class="intro">Como empresa profesional de inspeccion de calidad en la area industrial nos enorgullese brindar nuestros servicios y ayuda a los clientes al momento de certificar su obra.</h2>
-        <h2 class="inspeccion">Una inspección minuciosa de la planta lo ayudará a mantenerla segura y protegerlo de reparaciones costosas. Como una de las empresas de inspección más confiables del área de Argentina, inspeccionamos cada obra como si fuera nuestra. Los informes fáciles de leer que se entregan son completos y brindarán el conocimiento que necesita.</h2>
-        <div class="caja">
-            <div class="columna">
-                <img src="./pngwing.com.png" alt="logo">
-                <h2 class="titulo">Experiencia</h2>
+        <div class="info">
+            <h1>Quienes somos?</h1>
+            <h2>Como empresa profesional de inspeccion de calidad en la area industrial nos enorgullese brindar nuestros servicios y ayuda a los clientes al momento de certificar su obra.
+                <br>
+                <br>
+                Una inspección minuciosa de la planta lo ayudará a mantenerla segura y protegerlo de reparaciones costosas. Como una de las empresas de inspección más confiables del área de Argentina, inspeccionamos cada obra como si fuera nuestra. Los informes fáciles de leer que se entregan son completos y brindarán el conocimiento que necesita.</h2>
+            </div>
+        </div>
+    </div>
+    <div class="caja" id="caja">
+        <div class="columna">
+            <h2 class="titulo">Experiencia</h2>
+            <h4>ver mas</h4>
+                <div>
+                    <img src="./flecha.png" alt="flecha">
+                </div>
                 <h2 class="contenido">Somos una empresa con mas de 10 años de trayectoria con trabajos hechos dentro y fuera del pais</h2>
             </div>
             <div class="columna">
-                <img src="./pngwing.com.png" alt="logo">
                 <h2 class="titulo">Calidad</h2>
+                <h4>ver mas</h4>
+                <div>
+                    <img src="./flecha.png" alt="flecha">
+                </div>
                 <h2 class="contenido">Disponemos de equipos para cada servicio que ofrecemos junto con un personal capacitado para hacer la labor en tiempo y forma</h2>
             </div>
             <div class="columna">
-                <img src="./pngwing.com.png" alt="logo">
                 <h2 class="titulo">Variedad</h2>
+                <h4>ver mas</h4>
+                <div>
+                    <img src="./flecha.png" alt="flecha">
+                </div>
                 <h2 class="contenido">Brindamos una gran variedad de servicios para afrontar cualquier problema que se presente </h2>
             </div>
             <div class="columna">
-                <img src="./pngwing.com.png" alt="logo">
                 <h2 class="titulo">Confianza</h2>
+                <h4>ver mas</h4>
+                <div>
+                    <img src="./flecha.png" alt="flecha">
+                </div>
                 <h2 class="contenido">Junto con el informe completo se le sera totalmente transparente en cuanto al resultado obtenido</h2>
             </div>  
         </div>
     </div>
     
-
-    <!-- Esto es para hacer un scroll mas suave -->
+    
+    <!-- Servicios -->
+    
+</body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 600, function(){
-        window.location.hash = hash;
-      });
-    }
-  });
-});
-</script>
-
-    <!-- Servicios -->
-  
-</body>
+<script src="./app.js"></script>
 </html>
