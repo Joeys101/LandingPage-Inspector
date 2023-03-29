@@ -9,9 +9,7 @@ body {
 }
 
 .logo {
-    max-width: 200px;
-    margin-right: 50px;
-    padding: 10px;
+    max-width: 100px;
 }
 nav {
     display: flex;
@@ -133,35 +131,35 @@ li:hover {
     margin-bottom: 10px;
   }
   .campo label {
-    font-weight: 600;
-  }
-  .campo input {
-    height: 30px;
-  }
-  .campo textarea {
-    height: 280px;
-  }
-  .campo input, .campo textarea {
-    font-family: 'Poppins', sans-serif;
-    display: block;
-    border: transparent;
-    background-color: rgb(201, 196, 206);
-    width: 100%;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    border-radius: 7px;
-    padding: 8px;
-  }
-  .enviar {
-    padding: 10px;
-    margin-top: 12px;
-    font-weight: 600;
-    border: transparent;
-    background-color: rgb(145, 142, 148);
-    border-radius: 7px;
-  }
-.caja {
-    display: flex;
+      font-weight: 600;
+    }
+    .campo input {
+        height: 30px;
+    }
+    .campo textarea {
+        height: 280px;
+    }
+    .campo input, .campo textarea {
+        font-family: 'Poppins', sans-serif;
+        display: block;
+        border: transparent;
+        background-color: rgb(201, 196, 206);
+        width: 100%;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        border-radius: 7px;
+        padding: 8px;
+    }
+    .enviar {
+        padding: 10px;
+        margin-top: 12px;
+        font-weight: 600;
+        border: transparent;
+        background-color: rgb(145, 142, 148);
+        border-radius: 7px;
+    }
+    .caja {
+        display: flex;
     justify-content: center;
     height: 270px;
 }
@@ -227,8 +225,16 @@ li:hover {
     transition: 0.5s;
 }
 
+@keyframes aparecer {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .mostrar-animacion {
+    animation: aparecer 0.5s ease-in-out;
+  }
+
 .servicios {
     background-color: blue;
-    width: 100%;
-    height: 500px;
+    margin: 10px 10px;
 }
